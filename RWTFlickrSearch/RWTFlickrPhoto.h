@@ -11,7 +11,7 @@
 @interface RWTFlickrPhoto : NSObject
 
 @property (nonatomic, strong) NSString *title;
-@property (nonatomic, strong) NSURL *rul;
+@property (nonatomic, strong) NSURL *url;
 @property (nonatomic, strong) NSString *identifier;
 
 @end

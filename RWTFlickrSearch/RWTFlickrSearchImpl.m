@@ -33,9 +33,9 @@
     return self;
 }
 
-- (RACSignal *)flickrSearchSignal:(NSString *)searchString {
-    return [[[[RACSignal empty] logAll] delay:2.0] logAll];
-}
+//- (RACSignal *)flickrSearchSignal:(NSString *)searchString {
+//    return [[[[RACSignal empty] logAll] delay:2.0] logAll];
+//}
 
 - (RACSignal *)signalFromAPIMethod:(NSString *)method arguments:(NSDictionary *)args transform:(id (^)(NSDictionary *response))block {
     
@@ -63,6 +63,28 @@
         }];
         
     }];
+}
+
+- (RACSignal *)flickrSearchSignal:(NSString *)searchString {
+    return [self signalFromAPIMethod:@"flickr.photo.search"
+                           arguments:@{@"text": searchString,
+                                       @"sort": @"interestingness-desc"
+                                       } transform:^id(NSDictionary *response) {
+                                           RWTFlickrSearchResults *result = [RWTFlickrSearchResults new];
+                                           result.searchString = searchString;
+                                           result.totalResults = [[response valueForKeyPath:@"photos.total"] integerValue];
+                                           
+                                           NSArray *photos = [response valueForKeyPath:@"photos.photo"];
+                                           result.photos = [photos linq_select:^id(NSDictionary *jsonPhoto) {
+                                               RWTFlickrPhoto *photo = [RWTFlickrPhoto new];
+                                               photo.title = [jsonPhoto valueForKeyPath:@"title"];
+                                               photo.identifier = [jsonPhoto valueForKeyPath:@"id"];
+                                               photo.url = [self.flickrContext photoSourceURLFromDictionary:jsonPhoto size:OFFlickrSmallSize];
+                                               
+                                               return photo;
+                                           }];
+                                           return photos;
+                                       }];
 }
 
 @end
