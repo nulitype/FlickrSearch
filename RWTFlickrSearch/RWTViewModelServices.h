@@ -13,4 +13,6 @@
 
 - (id<RWTFlickrSearch>)getFlickrSearchService;
 
+- (void)pushViewModel:(id)viewModel;
+
 @end

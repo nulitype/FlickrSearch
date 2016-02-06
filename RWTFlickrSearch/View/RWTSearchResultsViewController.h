@@ -7,4 +7,6 @@
 
 @interface RWTSearchResultsViewController : UIViewController
 
+- (instancetype)initWithViewModel:(RWTSearchResultsViewController *)viewModel;
+
 @end

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "RWTFlickrSearch.h"
 
-@interface RWTFlickrSearchImpl : NSObject
+@interface RWTFlickrSearchImpl : NSObject <RWTFlickrSearch>
 
 
 @end

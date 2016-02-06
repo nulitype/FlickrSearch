@@ -31,9 +31,10 @@
 		72E401BE192C050F00354806 /* RWTSearchResultsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E401BC192C050F00354806 /* RWTSearchResultsTableViewCell.m */; };
 		72E401BF192C050F00354806 /* RWTSearchResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72E401BD192C050F00354806 /* RWTSearchResultsTableViewCell.xib */; };
 		A60F282A374641B387052C92 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D8CB3F8B1184D979703C3ED /* libPods.a */; };
+		BF1FEE4D1C65CF2200AFD479 /* RWTViewModelServicesImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1FEE4C1C65CF2200AFD479 /* RWTViewModelServicesImpl.m */; };
+		BF1FEE501C65DC2F00AFD479 /* RWTSearchResultsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1FEE4F1C65DC2F00AFD479 /* RWTSearchResultsViewModel.m */; };
 		BFC44ED61C5F39F80062FA23 /* RWTFlickrSearchViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC44ED51C5F39F80062FA23 /* RWTFlickrSearchViewModel.m */; };
 		BFC44EDB1C5F4B1D0062FA23 /* RWTFlickrSearchImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC44EDA1C5F4B1D0062FA23 /* RWTFlickrSearchImpl.m */; };
-		BFC44EDF1C5F50940062FA23 /* RWTViewModelServicesImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC44EDE1C5F50940062FA23 /* RWTViewModelServicesImpl.m */; };
 		BFC44EE21C5F54620062FA23 /* RWTFlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC44EE11C5F54620062FA23 /* RWTFlickrPhoto.m */; };
 		BFC44EE51C5F54F60062FA23 /* RWTFlickrSearchResults.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC44EE41C5F54F60062FA23 /* RWTFlickrSearchResults.m */; };
 /* End PBXBuildFile section */
@@ -85,14 +86,16 @@
 		72E401BD192C050F00354806 /* RWTSearchResultsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWTSearchResultsTableViewCell.xib; sourceTree = "<group>"; };
 		7D8CB3F8B1184D979703C3ED /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F01C6C30B28669FA7DDF2D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		BF1FEE4B1C65CF2200AFD479 /* RWTViewModelServicesImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTViewModelServicesImpl.h; sourceTree = "<group>"; };
+		BF1FEE4C1C65CF2200AFD479 /* RWTViewModelServicesImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTViewModelServicesImpl.m; sourceTree = "<group>"; };
+		BF1FEE4E1C65DC2F00AFD479 /* RWTSearchResultsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWTSearchResultsViewModel.h; path = RWTFlickrSearch/RWTSearchResultsViewModel.h; sourceTree = SOURCE_ROOT; };
+		BF1FEE4F1C65DC2F00AFD479 /* RWTSearchResultsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RWTSearchResultsViewModel.m; path = RWTFlickrSearch/RWTSearchResultsViewModel.m; sourceTree = SOURCE_ROOT; };
 		BFC44ED41C5F39F80062FA23 /* RWTFlickrSearchViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWTFlickrSearchViewModel.h; path = RWTFlickrSearch/RWTFlickrSearchViewModel.h; sourceTree = SOURCE_ROOT; };
 		BFC44ED51C5F39F80062FA23 /* RWTFlickrSearchViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RWTFlickrSearchViewModel.m; path = RWTFlickrSearch/RWTFlickrSearchViewModel.m; sourceTree = SOURCE_ROOT; };
 		BFC44ED81C5F4A3A0062FA23 /* RWTFlickrSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWTFlickrSearch.h; path = RWTFlickrSearch/RWTFlickrSearch.h; sourceTree = SOURCE_ROOT; };
 		BFC44ED91C5F4B1D0062FA23 /* RWTFlickrSearchImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWTFlickrSearchImpl.h; path = RWTFlickrSearch/RWTFlickrSearchImpl.h; sourceTree = SOURCE_ROOT; };
 		BFC44EDA1C5F4B1D0062FA23 /* RWTFlickrSearchImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RWTFlickrSearchImpl.m; path = RWTFlickrSearch/RWTFlickrSearchImpl.m; sourceTree = SOURCE_ROOT; };
 		BFC44EDC1C5F4E5E0062FA23 /* RWTViewModelServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWTViewModelServices.h; path = RWTFlickrSearch/RWTViewModelServices.h; sourceTree = SOURCE_ROOT; };
-		BFC44EDD1C5F50940062FA23 /* RWTViewModelServicesImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTViewModelServicesImpl.h; sourceTree = "<group>"; };
-		BFC44EDE1C5F50940062FA23 /* RWTViewModelServicesImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTViewModelServicesImpl.m; sourceTree = "<group>"; };
 		BFC44EE01C5F54620062FA23 /* RWTFlickrPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWTFlickrPhoto.h; path = RWTFlickrSearch/RWTFlickrPhoto.h; sourceTree = SOURCE_ROOT; };
 		BFC44EE11C5F54620062FA23 /* RWTFlickrPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RWTFlickrPhoto.m; path = RWTFlickrSearch/RWTFlickrPhoto.m; sourceTree = SOURCE_ROOT; };
 		BFC44EE31C5F54F60062FA23 /* RWTFlickrSearchResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWTFlickrSearchResults.h; path = RWTFlickrSearch/RWTFlickrSearchResults.h; sourceTree = SOURCE_ROOT; };
@@ -169,14 +172,14 @@
 		72E40175192BFFCE00354806 /* RWTFlickrSearch */ = {
 			isa = PBXGroup;
 			children = (
+				BF1FEE4B1C65CF2200AFD479 /* RWTViewModelServicesImpl.h */,
+				BF1FEE4C1C65CF2200AFD479 /* RWTViewModelServicesImpl.m */,
 				728550B1193E52510032A754 /* Util */,
 				72E401C1192C82CA00354806 /* Model */,
 				72E401C0192C82C100354806 /* ViewModel */,
 				72E401A4192C03AB00354806 /* View */,
 				72E4017E192BFFCE00354806 /* RWTAppDelegate.h */,
 				72E4017F192BFFCE00354806 /* RWTAppDelegate.m */,
-				BFC44EDD1C5F50940062FA23 /* RWTViewModelServicesImpl.h */,
-				BFC44EDE1C5F50940062FA23 /* RWTViewModelServicesImpl.m */,
 				72E40187192BFFCE00354806 /* Images.xcassets */,
 				72E40176192BFFCE00354806 /* Supporting Files */,
 			);
@@ -239,6 +242,8 @@
 				BFC44ED41C5F39F80062FA23 /* RWTFlickrSearchViewModel.h */,
 				BFC44ED51C5F39F80062FA23 /* RWTFlickrSearchViewModel.m */,
 				BFC44EDC1C5F4E5E0062FA23 /* RWTViewModelServices.h */,
+				BF1FEE4E1C65DC2F00AFD479 /* RWTSearchResultsViewModel.h */,
+				BF1FEE4F1C65DC2F00AFD479 /* RWTSearchResultsViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -420,15 +425,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF1FEE4D1C65CF2200AFD479 /* RWTViewModelServicesImpl.m in Sources */,
 				72E40180192BFFCE00354806 /* RWTAppDelegate.m in Sources */,
 				72E401BE192C050F00354806 /* RWTSearchResultsTableViewCell.m in Sources */,
 				72E401B7192C03AB00354806 /* RWTRecentSearchItemTableViewCell.m in Sources */,
 				72E4017C192BFFCE00354806 /* main.m in Sources */,
 				72E401B9192C03AB00354806 /* RWTSearchResultsViewController.m in Sources */,
+				BF1FEE501C65DC2F00AFD479 /* RWTSearchResultsViewModel.m in Sources */,
 				728550B5193E52740032A754 /* CETableViewBindingHelper.m in Sources */,
 				72E401B4192C03AB00354806 /* RWTFlickrSearchViewController.m in Sources */,
 				BFC44EDB1C5F4B1D0062FA23 /* RWTFlickrSearchImpl.m in Sources */,
-				BFC44EDF1C5F50940062FA23 /* RWTViewModelServicesImpl.m in Sources */,
 				BFC44ED61C5F39F80062FA23 /* RWTFlickrSearchViewModel.m in Sources */,
 				BFC44EE21C5F54620062FA23 /* RWTFlickrPhoto.m in Sources */,
 				BFC44EE51C5F54F60062FA23 /* RWTFlickrSearchResults.m in Sources */,

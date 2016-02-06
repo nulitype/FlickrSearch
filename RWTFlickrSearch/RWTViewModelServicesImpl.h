@@ -11,6 +11,8 @@
 
 @interface RWTViewModelServicesImpl : NSObject <RWTViewModelServices>
 
+- (instancetype)initWithNavigationController:(UINavigationController *)navigationController;
+
 
 
 @end
